@@ -1,0 +1,225 @@
+/*
+*    Name: 'Axel Page Theme'
+*    Default theme URL: https://axeljimenez.studio/
+*    Theme style sheet for https://axeljimenez.studio/
+*    Author: Brandon Arreguin (Brandon A.P)
+*    Social network URL: https://twitter.com/BranArreguin
+*/
+
+:root{
+    --dark:                 #1f1f1f;
+    --black:                #000000;
+    --light:                #ffffff;
+    --red:                  #e93131;
+    --hover-red:            #b11919;
+}
+
+body{
+    background: #ffffff;
+}
+
+.navigation-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: transparent;
+    z-index: 200;
+    transition: 0.4s ease;
+}
+.navigation-bar.sticky{
+    background: var(--black);
+    height: 85px;
+    transition: 0.5s ease;
+}
+
+.nav-desktop-mobile-section{
+    width: 100%;
+    height: 40px;
+    max-width: 1560px;
+    margin: 40px auto;
+    display: flex;
+    transition: 0.4s ease;
+}
+.navigation-bar.sticky .nav-desktop-mobile-section{
+    margin: 22px auto;
+    transition: 0.5s ease;
+}
+.nav-dm-first{
+    width: 100%;
+    height: 40px;
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+}
+.wordmark{
+    position: relative;
+    width: 270px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: 0.4s ease;
+}
+.wordmark .profile-img{
+    width: 60px;
+    height: 60px;
+    background-image: url(../../media/photos/profile/chidoga.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid var(--light);
+    margin-right: 10px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+.wordmark .wordmark-svg-img{
+    width: 200px;
+    height: 60px;
+    background-image: url(../../media/mark/logo/svg/axel-white-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: 0.4s ease;
+}
+
+.navigation-bar.sticky .wordmark{
+    width: 190px;
+    height: 40px;
+    transition: 0.5s ease;
+}
+.navigation-bar.sticky .wordmark .profile-img{
+    width: 40px;
+    height: 40px;
+    transition: 0.5s ease;
+}
+.navigation-bar.sticky .wordmark .wordmark-svg-img{
+    width: 140px;
+    height: 40px;
+    transition: 0.5s ease;
+}
+
+.burger-toggle-button{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    right: 5%;
+    background-color: transparent;
+}
+.burger-toggle-button .icon-container{
+    position: relative;
+    width: 22px;
+    height: 22px;
+}
+.burger-toggle-button .span-burger-icon{
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    top: 10px;
+    left: 0;
+    background: var(--light);
+    border-radius: 6px;
+    transition: 0.4s ease;
+}
+.burger-toggle-button .span-burger-icon:before{
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 2px;
+    top: -7px;
+    left: 0;
+    background: var(--light);
+    border-radius: 6px;
+    transition: 0.4s ease;
+}
+.burger-toggle-button .span-burger-icon:after{
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 2px;
+    top: 7px;
+    left: 0;
+    background: var(--light);
+    border-radius: 6px;
+    transition: 0.4s ease;
+}
+
+.burger-toggle-button.toggle .span-burger-icon{
+    background: transparent;
+    transition: 0.4s ease;
+}
+.burger-toggle-button.toggle .span-burger-icon:before{
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    background: var(--red);
+    transition: 0.4s ease;
+}
+.burger-toggle-button.toggle .span-burger-icon:after{
+    top: 0px;
+    left: 0;
+    transform: rotate(-45deg);
+    background: var(--red);
+    transition: 0.4s ease;
+}
+
+
+.nav-dm-second{
+    width: 100%;
+    height: 40px;
+    max-width: 75%;
+    display: flex;
+}
+.nav-sub-section-primary{
+    width: 80%;
+    height: 40px;
+}
+.nav-sub-section-primary ul{
+    display: flex;
+    float: right;
+    margin: 10px 0px;
+}
+.nav-sub-section-primary a{
+    color: var(--light);
+    padding: 10px 12px;
+    transition: 0.3s ease;
+}
+.nav-sub-section-primary a:hover{
+    color: var(--red);
+    transition: 0.3s ease;
+}
+
+.nav-sub-section-secondary{
+    width: 20%;
+    height: 40px;
+}
+.nav-sub-section-secondary ul{
+    display: flex;
+    float: right;
+    margin: 12px 0px;
+}
+.nav-sub-section-secondary a{
+    padding: 10px 12px;
+    font-size: 20px !important;
+}
+
+
+.axl-header-section{
+    position: relative;
+    width: 100%;
+    height: 966px;
+    background-image: url(../../media/photos/wallpaper/neonjoe.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 0%;
+}
+
+.filling{
+    width: 100%;
+    height: 2800px;
+}
